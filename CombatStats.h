@@ -10,6 +10,8 @@ private:
 		Stats["attack"] = 1;
 		Stats["health"] = 1;
 		Stats["health_regen"] = 1;
+		Stats["action_stamina"] = 1;
+		Stats["action_stamina_regen"] = 1;
 		Stats["xp"] = 1;
 		Stats["level"] = 1;
 		Stats["all_defence"] = 1;
@@ -30,9 +32,33 @@ private:
 	}
 
 public:
+	enum CombatInfo 
+	{
+		ATTACK=0,
+		HEALTH,
+		HEALTH_REGEN,
+		ACTION_STAMINA,
+		ACTION_STAMINA_REGEN,
+		XP,
+		LEVEL,
+		ALL_DEFENCE,
+		FIRE_DEFENCE,
+		WATER_DEFENCE,
+		AIR_DEFENCE,
+		EARTH_DEFENCE,
+		DARK_DEFENCE,
+		LIGHT_DEFENCE,
+		LAVA_DEFENCE,
+		ICE_DEFENCE,
+		POISON_DEFENCE,
+		RANGED_DEFENCE,
+		MAGIC_DEFENCE,
+		MELEE_DEFENCE
+	};
 	CombatStats() 
 	{
-		
+		SetBaseStats();
+
 	}
 
 	virtual ~CombatStats() 
