@@ -2,8 +2,8 @@
 
 int main() 
 {
-	Player p();
-
+	Player p;
+	
 
 
 	

@@ -1,5 +1,5 @@
 #pragma once
-#include "CombatStats.h"
+#include "BaseEnemy.h"
 #include "SkillStats.h"
 
 #include <iostream>
@@ -21,5 +21,16 @@ public:
 	virtual ~Player() 
 	{
 	
+	}
+	
+	AttackInfo Attack(int type, int range) 
+	{
+		float damage = combatStats.GetStat(CombatStats::ATTACK);
+		
+	}
+
+	void Defend(AttackInfo attack) 
+	{
+		
 	}
 };

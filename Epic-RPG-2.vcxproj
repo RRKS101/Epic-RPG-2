@@ -142,6 +142,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AttackInfo.h" />
     <ClInclude Include="BaseEnemy.h" />
     <ClInclude Include="CombatStats.h" />
     <ClInclude Include="Player.h" />

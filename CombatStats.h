@@ -75,4 +75,84 @@ public:
 	{
 		return Stats[key];
 	}
+
+	void SetStat(int key, float value) 
+	{
+		Stats[IntToName(key)] = value;
+	}
+
+	float GetStat(int key) 
+	{
+		return Stats[IntToName(key)];
+	}
+
+	std::string IntToName(int id) 
+	{
+		switch (id)
+		{
+		case ATTACK:
+			return "attack";
+			break;
+		case HEALTH:
+			return "health";
+			break;
+		case HEALTH_REGEN:
+			return "health_regen";
+			break;
+		case ACTION_STAMINA:
+			return "action_stamina";
+			break;
+		case ACTION_STAMINA_REGEN:
+			return "action_stamina_regen";
+			break;
+		case XP:
+			return "xp";
+			break;
+		case LEVEL:
+			return "level";
+			break;
+		case ALL_DEFENCE:
+			return "all_defence";
+			break;
+		case FIRE_DEFENCE:
+			return "fire_defence";
+			break;
+		case WATER_DEFENCE:
+			return "water_defence";
+			break;
+		case AIR_DEFENCE:
+			return "air_defence";
+			break;
+		case EARTH_DEFENCE:
+			return "earth_defence";
+			break;
+		case DARK_DEFENCE:
+			return "dark_defence";
+			break;
+		case LIGHT_DEFENCE:
+			return "light_defence";
+			break;
+		case LAVA_DEFENCE:
+			return "lava_defence";
+			break;
+		case ICE_DEFENCE:
+			return "ice_defence";
+			break;
+		case POISON_DEFENCE:
+			return "poison_defence";
+			break;
+		case RANGED_DEFENCE:
+			return "ranged_defence";
+			break;
+		case MAGIC_DEFENCE:
+			return "magic_defence";
+			break;
+		case MELEE_DEFENCE:
+			return "melle_defence";
+			break;
+		default:
+			return "";
+			break;
+		}
+	}
 };
